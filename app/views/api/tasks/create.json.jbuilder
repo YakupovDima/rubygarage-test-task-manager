@@ -1,0 +1,1 @@
+json.partial! partial: 'task', task: @task

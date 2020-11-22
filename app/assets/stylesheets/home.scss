@@ -1,0 +1,298 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$base-font-color: #999999;
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin: 60px 0;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.header-subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  margin-bottom: 37px;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #466eab;
+  border: #315589 1px solid;
+}
+
+.project-title-container {
+  display: flex;
+  align-items: center;
+  margin: 0 11px 0 16px;
+  width: 100%;
+}
+
+.project-title-edit-container {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+
+.project-title-controls {
+  display: none;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.project-header:hover .project-title-controls {
+  display: flex;
+}
+
+.project-title {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 450px;
+  color: white;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.project-title-edit-input {
+  border-radius: 0;
+  height: 100%;
+  font-size: 15px;
+  color: $base-font-color;
+  padding: 0 12px;
+  border: none;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: #c3c3c3;
+  }
+}
+
+.project-title-edit-submit {
+  height: 100%;
+  background-color: #588f70;
+  color: white;
+  width: 30px;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  &:hover {
+    color: white;
+    background-color: #6bb58d;
+  }
+}
+
+.project-header-icon {
+  font-size: 25px;
+  justify-content: center;
+  margin-right: 12px;
+  color: #3e4e6c;
+}
+
+.project-title-control-icon {
+  font-size: 16px;
+  color: #8ea9ce;
+  margin: 0 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: #adcff8;
+  }
+}
+
+.icon-separator {
+  border-left: 1px #5284bf solid;
+  height: 14px;
+  margin: 0;
+}
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  background-color: #d0d0d0;
+  height: 50px;
+  border-left: #acafa1 1px solid;
+  border-right: #acafa1 1px solid;
+}
+
+.add-task-icon {
+  color: #588f70;
+  font-size: 24px;
+  margin: 0 14px;
+}
+
+.add-task-input-container {
+  display: flex;
+  margin-right: 11px;
+  height: 30px;
+  width: 100%;
+}
+
+.add-task-input {
+  border-radius: 0;
+  height: 100%;
+  font-size: 15px;
+  color: $base-font-color;
+  padding: 0 12px;
+  border: none;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: #c3c3c3;
+  }
+}
+
+.add-task-btn {
+  height: 100%;
+  background-color: #588f70;
+  color: white;
+  width: 108px;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  &:hover {
+    color: white;
+    background-color: #6bb58d;
+  }
+}
+
+.tasks {
+  border: #acafa1 1px solid;
+  border-radius: 0 0 14px 14px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  align-items: center;
+  position: relative;
+  border-top: #e7ebea 1px solid;
+
+  &:hover {
+    background-color: #fcfed5;
+  }
+}
+
+.tasks .task:last-child {
+  border-radius: 0 0 14px 14px;
+}
+
+.task:hover .task-controls {
+  display: flex;
+}
+
+.task-title-container {
+  min-height: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 470px;
+  border-right: #e7ebea 1px solid;
+}
+
+.task-checkbox {
+  margin: 0 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.task-checkbox-separator {
+  position: absolute;
+  left: 40px;
+  border-left: #efdadf 1px solid;
+  border-right: #efdadf 1px solid;
+  width: 4px;
+  height: 100%;
+}
+
+.task-title {
+  margin: 0 16px;
+  text-align: left;
+  color: $base-font-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.task-controls {
+  min-height: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.add-project-btn {
+  margin: 50px 0;
+}
+
+.task-controls-arrows {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-change-position-icon {
+  font-size: 11px;
+  color: $base-font-color;
+  margin: 0 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: #b7b5b5;
+  }
+}
+
+.task-change-position-separator {
+  width: 10px;
+  height: 0;
+  margin: 0 10px;
+  border-bottom: $base-font-color 1px solid;
+}
+
+.task-control-icon {
+  color: $base-font-color;
+  font-size: 12px;
+  margin: 0 10px;
+
+  &:hover {
+    color: #b7b5b5;
+    cursor: pointer;
+  }
+}
+
+.task-controls-separator {
+  height: 13px;
+  border-left: #cccccc 1px solid;
+}
