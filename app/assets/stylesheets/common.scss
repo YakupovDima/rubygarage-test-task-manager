@@ -20,3 +20,9 @@ label:focus,
 .invisible {
   opacity: 0 !important;
 }
+
+body {
+  background-image: image-url('background');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
