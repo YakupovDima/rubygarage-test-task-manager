@@ -16,9 +16,12 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 #
-gem 'bootstrap', '~> 4.5.0'
+
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'

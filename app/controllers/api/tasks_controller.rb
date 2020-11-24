@@ -1,7 +1,7 @@
 class Api::TasksController < ActionController::API
 
   def index
-    @tasks = Task.where(project_id: params[:project_id]).order(priority: :asc).to_a
+    @tasks = Task.where(project_id: params[:project_id]).order(priority: :desc).to_a
   end
 
   def create

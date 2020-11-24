@@ -12,8 +12,9 @@
 //
 //= require rails-ujs
 //= require jquery3
-//= require popper
 //= require bootstrap
+//= require moment
+//= require bootstrap-datetimepicker
 
 //= require jquery_csrf
 
